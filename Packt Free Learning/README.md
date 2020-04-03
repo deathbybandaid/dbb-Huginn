@@ -18,4 +18,4 @@ This scenario uses Phantom JS, and is set to 1 hour. I recommend that you set th
 * `phantomjscloud_api_key`
 
 ## diagram
-<img src="/docs/diagram.PNG" alt="Diagram"/>
+<img src="diagram.PNG" alt="Diagram"/>

@@ -19,4 +19,4 @@ This scenario was designed to scrape the Truth in IT Upcoming Events Page, and O
 * `truthinit_calendar_url`
 
 ## diagram
-<img src="/docs/diagram.PNG" alt="Diagram"/>
+<img src="diagram.PNG" alt="Diagram"/>

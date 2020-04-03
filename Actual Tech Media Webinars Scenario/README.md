@@ -19,4 +19,4 @@ This scenario was designed to scrape the Actual Tech Media Upcoming Events Page,
 * `actualtechmedia_calendar_url`
 
 ## diagram
-<img src="/docs/diagram.PNG" alt="Diagram"/>
+<img src="diagram.PNG" alt="Diagram"/>
