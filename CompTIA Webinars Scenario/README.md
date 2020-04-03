@@ -16,7 +16,8 @@ This scenario was designed to scrape the Spiceworks Upcoming Events Page, and Ou
 
 ## Credentials used:
 * `google_api_service_email`
-* `spicework_calendar_url`
+* `google_calendar_id_comptia`
+* `google_api_key_file`
 
 ## Additional Files
 Google API Credential File `/home/huginn/huginn-google_api.json`

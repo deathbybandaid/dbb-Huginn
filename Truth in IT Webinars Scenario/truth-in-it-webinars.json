@@ -72,7 +72,7 @@
       "guid": "97b492351af89165a608bc94b30728f8",
       "options": {
         "expected_update_period_in_days": "10",
-        "calendar_id": "{% credential truthinit_calendar_url%}",
+        "calendar_id": "{% credential google_calendar_id_truthinit%}",
         "google": {
           "service_account_email": "{% credential google_api_service_email %}",
           "key_file": "/home/huginn/huginn-google_api.json"

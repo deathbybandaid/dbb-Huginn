@@ -16,7 +16,8 @@ This scenario was designed to scrape the Truth in IT Upcoming Events Page, and O
 
 ## Credentials used:
 * `google_api_service_email`
-* `truthinit_calendar_url`
+* `google_calendar_id_truthinit`
+* `google_api_key_file`
 
 ## Additional Files
 Google API Credential File `/home/huginn/huginn-google_api.json`

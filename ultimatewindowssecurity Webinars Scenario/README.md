@@ -16,7 +16,8 @@ This scenario was designed to scrape the ultimatewindowssecurity Upcoming Events
 
 ## Credentials used:
 * `google_api_service_email`
-* `ultimatewindowssecurity_calendar_url`
+* `google_calendar_id_ultimatewindowssecurity`
+* `google_api_key_file`
 
 ## Additional Files
 Google API Credential File `/home/huginn/huginn-google_api.json`

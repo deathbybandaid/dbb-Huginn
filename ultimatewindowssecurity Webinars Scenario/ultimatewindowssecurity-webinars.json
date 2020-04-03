@@ -139,7 +139,7 @@
       "guid": "afdb8d332eca369fe7f3c177ea458047",
       "options": {
         "expected_update_period_in_days": "10",
-        "calendar_id": "{% credential ultimatewindowssecurity_calendar_url%}",
+        "calendar_id": "{% credential google_calendar_id_ultimatewindowssecurity%}",
         "google": {
           "service_account_email": "{% credential google_api_service_email %}",
           "key_file": "/home/huginn/huginn-google_api.json"

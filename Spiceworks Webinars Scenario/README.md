@@ -16,7 +16,8 @@ This scenario was designed to scrape the Comptia Upcoming Events Page, and Outpu
 
 ## Credentials used:
 * `google_api_service_email`
-* `comptia_calendar_url`
+* `google_calendar_id_comptia`
+* `google_api_key_file`
 
 ## diagram
 <img src="diagram.PNG" alt="Diagram"/>
