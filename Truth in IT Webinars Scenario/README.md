@@ -18,5 +18,8 @@ This scenario was designed to scrape the Truth in IT Upcoming Events Page, and O
 * `google_api_service_email`
 * `truthinit_calendar_url`
 
+## Additional Files
+Google API Credential File `/home/huginn/huginn-google_api.json`
+
 ## diagram
 <img src="diagram.PNG" alt="Diagram"/>

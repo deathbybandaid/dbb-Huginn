@@ -1,0 +1,15 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "https://www.comptia.org/events/webinars",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "url": {
+      "css": "#accordionWebinar > div > div.accordion-content > div > a:nth-child(3)",
+      "value": "@href"
+    }
+  },
+  "template": {
+    "timestamp": "{{timestamp | strip_newlines  | date: \"%Y-%m-%d %H:%M\" }}"
+  }
+}

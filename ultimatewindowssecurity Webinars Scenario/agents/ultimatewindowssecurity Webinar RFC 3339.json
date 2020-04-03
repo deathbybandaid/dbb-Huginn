@@ -1,0 +1,15 @@
+{
+  "instructions": {
+    "timestamp": "{{ timestamp | date: \"%Y-%m-%d %H:%M\" }}",
+    "year": "{{ timestamp | date: \"%Y\" }}",
+    "month": "{{ timestamp | date: \"%m\" }}",
+    "day": "{{ timestamp | date: \"%d\" }}",
+    "hour_start": "{{ timestamp | date: \"%H\" }}",
+    "hour_end": "{{ timestamp | date: \"%H\" | plus: 1 }}",
+    "minute": "{{ timestamp | date: \"%M\" }}"
+  },
+  "matchers": [
+
+  ],
+  "mode": "merge"
+}

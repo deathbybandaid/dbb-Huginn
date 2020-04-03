@@ -75,7 +75,7 @@
         "calendar_id": "{% credential truthinit_calendar_url%}",
         "google": {
           "service_account_email": "{% credential google_api_service_email %}",
-          "key_file": "/home/huginn/huginn-272816-7d1cdb5dd771.json"
+          "key_file": "/home/huginn/huginn-google_api.json"
         }
       },
       "keep_events_for": 0,

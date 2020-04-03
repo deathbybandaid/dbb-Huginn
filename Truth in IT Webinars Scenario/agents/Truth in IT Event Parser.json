@@ -1,0 +1,22 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "{{url}}",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "body": {
+      "css": "body > div.pageWrapper > section > div.pageBodyWrapper > div > div > div.column.mainColumn.topSpace > section > div > div:nth-child(1) > div:nth-child(2)",
+      "value": "string(.)"
+    },
+    "timestamp": {
+      "css": "body > div.pageWrapper > section > div.pageBodyWrapper > div > div > div.column.mainColumn.topSpace > section > div > div:nth-child(1) > div.mainHeadingWrapper.newsEventHeading.inside > div.mainHeading > div.publishInfo.dim > div.date",
+      "value": "string(.)"
+    }
+  },
+  "template": {
+    "url": "{{url}}",
+    "timestamp": "{{timestamp  | split: \" - \" | first | split: \" \" | first | split: \"/\" | last}}-{{timestamp  | split: \" - \" | first | split: \" \" | first | split: \"/\" | first}}-{{timestamp  | split: \" - \" | first | split: \" \" | first | replace_first: \"/\", \"\\\" | split: \"\\\" | last | split: \"/\" | first}} {{timestamp  | split: \" - \" | first | split: \" \" | last  | date: \"%H:%M\"}}",
+    "body": "{{body }}{% line_break %}{% line_break %}{{url}}",
+    "title": "{{title}}"
+  }
+}

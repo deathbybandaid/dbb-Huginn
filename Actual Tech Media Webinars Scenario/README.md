@@ -18,5 +18,8 @@ This scenario was designed to scrape the Actual Tech Media Upcoming Events Page,
 * `google_api_service_email`
 * `actualtechmedia_calendar_url`
 
+## Additional Files
+Google API Credential File `/home/huginn/huginn-google_api.json`
+
 ## diagram
 <img src="diagram.PNG" alt="Diagram"/>

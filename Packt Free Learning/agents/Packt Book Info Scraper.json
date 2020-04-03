@@ -1,0 +1,36 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "{{bookurl}}",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "title": {
+      "css": ".page-title",
+      "value": "string(.)"
+    },
+    "author": {
+      "css": ".authors",
+      "value": "string(.)"
+    },
+    "publication_date": {
+      "css": ".release-date",
+      "value": "string(.)"
+    },
+    "page_count": {
+      "css": "p.length:nth-child(4)",
+      "value": "string(.)"
+    },
+    "overview": {
+      "css": "div.product:nth-child(6)",
+      "value": "string(.)"
+    }
+  },
+  "template": {
+    "url": "https://www.packtpub.com/free-learning",
+    "page_count": "{{page_count | strip_newlines | split: \" pages\" | first}}",
+    "overview": "{{overview  | strip_newlines}}{% line_break %}{% line_break %}{{bookurl}}",
+    "publication_date": "{{publication_date | strip_newlines}}",
+    "author": "{{author | strip_newlines}}",
+    "title": "{{title | strip_newlines}}"
+  }
+}

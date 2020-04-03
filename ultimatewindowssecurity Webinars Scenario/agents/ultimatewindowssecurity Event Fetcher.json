@@ -1,0 +1,15 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "https://www.ultimatewindowssecurity.com/",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "url": {
+      "css": "#homeLeftColumn > div:nth-child(n) > ul > li > a",
+      "value": "@href"
+    }
+  },
+  "template": {
+    "url": "https://www.ultimatewindowssecurity.com{{url}}"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "expected_update_period_in_days": "2",
+  "url_from_event": "{{url}}",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "bookurl": {
+      "css": ".product__img-wrapper",
+      "value": "@href"
+    }
+  },
+  "template": {
+    "bookurl": "https://www.packtpub.com{{bookurl}}",
+    "url": "https://www.packtpub.com/free-learning"
+  }
+}

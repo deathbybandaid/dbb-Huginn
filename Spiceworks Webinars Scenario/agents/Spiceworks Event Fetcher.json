@@ -1,0 +1,19 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "https://community.spiceworks.com/calendar",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "url": {
+      "css": "#primary > div:nth-child(2) > ul > li:nth-child(n) > div.calendar-event-info > div.calendar-event-info_title > a",
+      "value": "@data-track-live-event-title"
+    },
+    "timestamp": {
+      "css": "#primary > div:nth-child(2) > ul > li:nth-child(n) > div.calendar-event-info > div.calendar-event-info_details > span",
+      "value": ".//text()"
+    }
+  },
+  "template": {
+    "url": "https://onlinexperiences.com/scripts/Server.nxp?LASCmd=AI:4;F:QS!10100&{{url | replace: \"&AffiliateData=swcal\", \"\" | split: \"QReg/\" | last}}"
+  }
+}

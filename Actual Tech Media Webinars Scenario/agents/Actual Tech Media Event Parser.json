@@ -1,0 +1,18 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "{{url}}",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "body": {
+      "css": "#SiteBody > div > section",
+      "value": "string(.)"
+    }
+  },
+  "template": {
+    "url": "{{url}}",
+    "timestamp": "{{timestamp}}",
+    "body": "{{body }}{% line_break %}{% line_break %}{{url}}",
+    "title": "{{title}}"
+  }
+}

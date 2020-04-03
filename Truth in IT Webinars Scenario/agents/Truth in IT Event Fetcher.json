@@ -1,0 +1,16 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "https://www.truthinit.com/index.php/events/",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "url": {
+      "css": "body > div.pageWrapper > section > div.pageBodyWrapper > div > div > div.column.sideColumn.topSpace > aside > div > div:nth-child(2) > div.widgetContent > div > ul > li:nth-child(n) > div.text > h4 > a",
+      "value": "@href"
+    },
+    "title": {
+      "css": "body > div.pageWrapper > section > div.pageBodyWrapper > div > div > div.column.sideColumn.topSpace > aside > div > div:nth-child(2) > div.widgetContent > div > ul > li:nth-child(n) > div.text > h4 > a",
+      "value": "string(.)"
+    }
+  }
+}

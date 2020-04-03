@@ -1,0 +1,25 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "{{url}}",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "timestamp": {
+      "xpath": "/html/body/section[3]/div/div[2]/div[1]/div/p[1]/time",
+      "value": "."
+    },
+    "body": {
+      "xpath": "/html/body/section[3]/div/div[2]/div[1]/div/p[2]",
+      "value": "."
+    },
+    "title": {
+      "xpath": "/html/body/section[3]/div/div[2]/div[1]/div/h1",
+      "value": "string(.)"
+    }
+  },
+  "template": {
+    "url": "{{url}}",
+    "timestamp": "{{timestamp | date: \"%Y-%m-%d %H:%M\" }}",
+    "body": "{{body }}{% line_break %}{% line_break %}{{url}}"
+  }
+}

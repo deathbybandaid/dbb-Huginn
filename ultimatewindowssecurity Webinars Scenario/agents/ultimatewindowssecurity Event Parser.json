@@ -1,0 +1,26 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "{{url}}",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "title": {
+      "css": "#ctl00_ctl00_ctl00_Content_Content_Content_webinartitle",
+      "value": "string(.)"
+    },
+    "timestamp": {
+      "css": "#ctl00_ctl00_ctl00_Content_Content_Content_tz1_ListView2_ctrl8_TimeLabel",
+      "value": "string(.)"
+    },
+    "body": {
+      "css": "#ctl00_ctl00_ctl00_Content_Content_Content_abstract",
+      "value": "string(.)"
+    }
+  },
+  "template": {
+    "url": "{{url}}",
+    "timestamp": "{{timestamp  | split: \" \" | first | split: \"/\" | last}}-{{timestamp  | split: \" \" | first | split: \"/\" | first}}-{{timestamp  | split: \" \" | first | replace_first: \"/\", \"\\\" | split: \"\\\" | last | split: \"/\" | first}} {{timestamp  | replace_first: \" \", \"#\"| split: \"#\" | last  | date: \"%H:%M\"}}",
+    "body": "{{body }}{% line_break %}{% line_break %}{{url}}",
+    "title": "{{title}}"
+  }
+}

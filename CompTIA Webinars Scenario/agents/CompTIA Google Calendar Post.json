@@ -1,0 +1,8 @@
+{
+  "expected_update_period_in_days": "10",
+  "calendar_id": "{% credential comptia_calendar_url%}",
+  "google": {
+    "service_account_email": "{% credential google_api_service_email %}",
+    "key_file": "/home/huginn/huginn-google_api.json"
+  }
+}

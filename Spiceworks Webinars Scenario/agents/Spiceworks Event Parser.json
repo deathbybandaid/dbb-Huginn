@@ -1,0 +1,21 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "{{url}}",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "title": {
+      "css": "#Section1 > div:nth-child(2) > p:nth-child(2) > span > strong",
+      "value": ".//text()"
+    },
+    "body": {
+      "css": "#Section1 > div:nth-child(3)",
+      "value": "string(.)"
+    }
+  },
+  "template": {
+    "url": "{{url}}",
+    "timestamp": "{{timestamp}}",
+    "body": "{{body | split: \"Who's Spiceworks\" | first}}{% line_break %}{% line_break %}{{url}}"
+  }
+}

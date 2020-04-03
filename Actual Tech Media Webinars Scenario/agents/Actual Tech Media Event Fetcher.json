@@ -1,0 +1,24 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "https://events.actualtechmedia.com/",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "url": {
+      "css": "#ITWUpcomingList > li:nth-child(n) > h3 > a",
+      "value": "@href"
+    },
+    "timestamp": {
+      "css": "#ITWUpcomingList > li:nth-child(n) > cite > time",
+      "value": "string(.)"
+    },
+    "title": {
+      "css": "#ITWUpcomingList > li:nth-child(n) > h3 > a",
+      "value": ".//text()"
+    }
+  },
+  "template": {
+    "url": "https://events.actualtechmedia.com{{url}}",
+    "timestamp": "{{timestamp | strip_newlines  | date: \"%Y-%m-%d %H:%M\" }}"
+  }
+}

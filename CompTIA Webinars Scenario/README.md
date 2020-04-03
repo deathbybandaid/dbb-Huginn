@@ -18,5 +18,8 @@ This scenario was designed to scrape the Spiceworks Upcoming Events Page, and Ou
 * `google_api_service_email`
 * `spicework_calendar_url`
 
+## Additional Files
+Google API Credential File `/home/huginn/huginn-google_api.json`
+
 ## diagram
 <img src="diagram.PNG" alt="Diagram"/>
