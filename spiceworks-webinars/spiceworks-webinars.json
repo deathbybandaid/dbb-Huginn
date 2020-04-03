@@ -74,9 +74,9 @@
       "guid": "4eb02c37d53079d6270174b37eaa1685",
       "options": {
         "expected_update_period_in_days": "10",
-        "calendar_id": "{% credential dbb_spicework_calendar_url %}",
+        "calendar_id": "{% credential spicework_calendar_url %}",
         "google": {
-          "service_account_email": "{% credential dbb_google_api_service_email %}",
+          "service_account_email": "{% credential google_api_service_email %}",
           "key_file": "/home/huginn/huginn-272816-7d1cdb5dd771.json"
         }
       },
