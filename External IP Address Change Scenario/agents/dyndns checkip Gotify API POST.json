@@ -1,0 +1,25 @@
+{
+  "url": "{% credential gotify_url %}/message?token={% credential gotify_token %}",
+  "method": "post",
+  "payload": {
+    "title": "{{title}}",
+    "message": "{{message}}",
+    "extras": {
+      "client::notification": {
+        "click": {
+          "url": "{{url}}"
+        }
+      }
+    },
+    "priority": 5
+  },
+  "extract": {
+    "all": {
+      "path": "."
+    }
+  },
+  "headers": {
+  },
+  "emit_events": "true",
+  "merge_event": "true"
+}

@@ -1,0 +1,17 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "http://checkip.dyndns.org/",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "ip_address": {
+      "css": "body",
+      "value": ".//text()"
+    }
+  },
+  "template": {
+    "message": "New IP: {{ip_address | split: \": \" | last}}",
+    "url": "http://checkip.dyndns.org/",
+    "title": "External IP Address Has Changed"
+  }
+}

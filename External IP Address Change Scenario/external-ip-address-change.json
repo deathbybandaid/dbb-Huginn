@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "name": "External IP Address Change",
+  "description": "No description provided",
+  "source_url": false,
+  "guid": "4fa3239ea5f8652df46e2dd6ad0ce495",
+  "tag_fg_color": "#ffffff",
+  "tag_bg_color": "#5bc0de",
+  "icon": "gear",
+  "exported_at": "2020-04-04T16:49:52Z",
+  "agents": [
+    {
+      "type": "Agents::JsonApiAgent",
+      "name": "dyndns checkip Gotify API POST",
+      "disabled": false,
+      "guid": "880113574ff28c95fa3b86d176704258",
+      "options": {
+        "url": "{% credential gotify_url %}/message?token={% credential gotify_token %}",
+        "method": "post",
+        "payload": {
+          "title": "{{title}}",
+          "message": "{{message}}",
+          "extras": {
+            "client::notification": {
+              "click": {
+                "url": "{{url}}"
+              }
+            }
+          },
+          "priority": 5
+        },
+        "extract": {
+          "all": {
+            "path": "."
+          }
+        },
+        "headers": {
+        },
+        "emit_events": "true",
+        "merge_event": "true"
+      },
+      "schedule": "never",
+      "keep_events_for": 0,
+      "propagate_immediately": true
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "dyndns checkip",
+      "disabled": false,
+      "guid": "efe6084259fe8ddd2bf697a5da8f0c98",
+      "options": {
+        "expected_update_period_in_days": "2",
+        "url": "http://checkip.dyndns.org/",
+        "type": "html",
+        "mode": "on_change",
+        "extract": {
+          "ip_address": {
+            "css": "body",
+            "value": ".//text()"
+          }
+        },
+        "template": {
+          "message": "New IP: {{ip_address | split: \": \" | last}}",
+          "url": "http://checkip.dyndns.org/",
+          "title": "External IP Address Has Changed"
+        }
+      },
+      "schedule": "every_5m",
+      "keep_events_for": 0,
+      "propagate_immediately": false
+    }
+  ],
+  "links": [
+    {
+      "source": 1,
+      "receiver": 0
+    }
+  ],
+  "control_links": [
+
+  ]
+}
