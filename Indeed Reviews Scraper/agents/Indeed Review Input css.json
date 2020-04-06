@@ -1,0 +1,28 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "{{review_url}}",
+  "type": "html",
+  "mode": "merge",
+  "extract": {
+    "title": {
+      "css": "#cmp-container > div > div:nth-child(1) > div.cmp-ReviewsIndividualPage > div.cmp-LeftRightColumn > div.cmp-LeftRightColumn-left > div.cmp-IndividualReview > div.cmp-IndividualReview-featured.cmp-IndividualReview-reviewWrapper > div > div > div.cmp-Review-content > div.cmp-Review-title",
+      "value": ".//text()"
+    },
+    "stars": {
+      "css": "#cmp-container > div > div:nth-child(1) > div.cmp-ReviewsIndividualPage > div.cmp-LeftRightColumn > div.cmp-LeftRightColumn-left > div.cmp-IndividualReview > div.cmp-IndividualReview-featured.cmp-IndividualReview-reviewWrapper > div > div > div.cmp-Review-rating > div > div.cmp-ReviewRating-text",
+      "value": ".//text()"
+    },
+    "post_info": {
+      "css": "#cmp-container > div > div:nth-child(1) > div.cmp-ReviewsIndividualPage > div.cmp-LeftRightColumn > div.cmp-LeftRightColumn-left > div.cmp-IndividualReview > div.cmp-IndividualReview-featured.cmp-IndividualReview-reviewWrapper > div > div > div.cmp-Review-content > div.cmp-Review-author > span",
+      "value": ".//text()"
+    },
+    "job_title": {
+      "css": "#cmp-container > div > div:nth-child(1) > div.cmp-ReviewsIndividualPage > div.cmp-LeftRightColumn > div.cmp-LeftRightColumn-left > div.cmp-IndividualReview > div.cmp-IndividualReview-featured.cmp-IndividualReview-reviewWrapper > div > div > div.cmp-Review-content > div.cmp-Review-author > span > a:nth-child(2)",
+      "value": ".//text()"
+    },
+    "review_body": {
+      "css": "#cmp-container > div > div:nth-child(1) > div.cmp-ReviewsIndividualPage > div.cmp-LeftRightColumn > div.cmp-LeftRightColumn-left > div.cmp-IndividualReview > div.cmp-IndividualReview-featured.cmp-IndividualReview-reviewWrapper > div > div > div.cmp-Review-content > div.cmp-Review-text > span > span:nth-child(1)",
+      "value": ".//text()"
+    }
+  }
+}

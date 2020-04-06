@@ -1,0 +1,15 @@
+{
+  "instructions": {
+    "review_title": "{{title}}",
+    "stars": "{{stars | round}}/5",
+    "job_title": "{{job_title}}",
+    "employee_status": "{{post_info | split: job_title | last | split: \"(\" | last | split: \")\" | first}}",
+    "post_date": "{{post_info | split: \" - \"| last}}",
+    "review_body": "{{review_body}}",
+    "review_url": "{{review_url}}"
+  },
+  "matchers": [
+
+  ],
+  "mode": "clean"
+}

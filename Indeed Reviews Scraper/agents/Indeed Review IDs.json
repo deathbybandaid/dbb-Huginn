@@ -1,0 +1,11 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "https://www.indeed.com/cmp/{% credential indeed_business_name  %}/reviews?fcountry=ALL&sort=date_dsc",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "review_url": {
+      "css": "#cmp-container > div > div:nth-child(1) > div.cmp-ReviewsPage > div.cmp-LeftRightColumn > div.cmp-LeftRightColumn-left > div > div:nth-child(1) > div:nth-child(n) > div > div.cmp-Review-content > div:nth-child(5) > div > div.cmp-Review-actionRightSide > div.cmp-ReviewShare > div > div.cmp-ReviewShare-item.is-copyLink > div > a",
+      "value": "@href"
+    }
+  }
