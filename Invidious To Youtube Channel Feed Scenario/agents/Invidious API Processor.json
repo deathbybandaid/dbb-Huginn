@@ -1,0 +1,11 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "https://www.invidio.us/api/v1/videos/{{video_id}}",
+  "type": "json",
+  "mode": "merge",
+  "extract": {
+    "duration_seconds": {
+      "path": "lengthSeconds"
+    }
+  }
+}

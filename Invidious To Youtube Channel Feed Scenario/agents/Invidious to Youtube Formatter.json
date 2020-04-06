@@ -1,0 +1,16 @@
+{
+  "instructions": {
+    "url": "https://www.youtube.com/watch?v={{id | split: ':' | last}}",
+    "title": "{{title}}",
+    "video_id": "{{id | split: ':' | last}}",
+    "channel_name": "{{authors[0] | split: ' (' | first}}",
+    "channel_id": "{{authors[0] | split: 'channel/' | last | split: ')' | first}}",
+    "pubdate": "{{date_published}}",
+    "id": "{{id}}",
+    "content": "{{content}}"
+  },
+  "matchers": [
+
+  ],
+  "mode": "clean"
+}
