@@ -1,0 +1,18 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "{{url}}",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "img": {
+      "css": "#comic img",
+      "value": "@src"
+    }
+  },
+  "template": {
+    "title": "{{title}}",
+    "url": "{{url}}",
+    "pubDate": "{{pubDate}}",
+    "img": "https:{{img}}"
+  }
+}

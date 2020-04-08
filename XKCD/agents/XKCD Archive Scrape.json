@@ -1,0 +1,24 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "https://xkcd.com/archive/",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "url": {
+      "css": "#middleContainer > a:nth-child(n)",
+      "value": "@href"
+    },
+    "pubDate": {
+      "css": "#middleContainer > a:nth-child(n)",
+      "value": "@title"
+    },
+    "title": {
+      "css": "#middleContainer > a:nth-child(n)",
+      "value": "string(.)"
+    }
+  },
+  "template": {
+    "url": "https://xkcd.com{{url}}",
+    "pubDate": "{{pubDate | date: \"%Y-%m-%d %H:%M\"}}"
+  }
+}

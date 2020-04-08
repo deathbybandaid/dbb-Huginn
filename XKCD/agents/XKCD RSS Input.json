@@ -1,0 +1,5 @@
+{
+  "expected_update_period_in_days": "5",
+  "clean": "false",
+  "url": "https://xkcd.com/atom.xml"
+}
