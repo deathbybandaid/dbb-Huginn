@@ -1,0 +1,6 @@
+{
+  "language": "JavaScript",
+  "code": "function urlformatter(inputyear, inputmonth){\r\n  var url = \"https://chiefobrienatwork.com/archive/\" + (inputyear).toString() + \"/\" + (inputmonth).toString()\r\n  return url;\r\n}\r\n\r\nAgent.check = function() {\r\n  var currentYear = new Date().getFullYear();\r\n  var currentMonth = new Date().getMonth();\r\n  var dateurl = urlformatter(currentYear, currentMonth)\r\n  this.createEvent(\r\n    {\r\n      'year': currentYear,\r\n      'month': currentMonth,\r\n      'dateurl': dateurl,\r\n    });\r\n};",
+  "expected_receive_period_in_days": "2",
+  "expected_update_period_in_days": "2"
+}

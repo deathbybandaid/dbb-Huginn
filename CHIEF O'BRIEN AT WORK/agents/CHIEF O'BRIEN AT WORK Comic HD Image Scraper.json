@@ -1,0 +1,18 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "{{imgurl}}",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "img": {
+      "css": "#base-container > div.dnZGw > main > button > span > img",
+      "value": "@srcset"
+    }
+  },
+  "template": {
+    "url": "{{url}}",
+    "title": "{{title}}",
+    "pubDate": "{{pubDate}}",
+    "img": "{{ img | split: \",\" | last | split: \" \" | first}}"
+  }
+}

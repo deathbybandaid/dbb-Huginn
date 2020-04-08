@@ -1,0 +1,20 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "{{url}}",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "url": {
+      "css": "#base-container > div._1VWa_ > div._2u2xA > div:nth-child(1) > div > div:nth-child(n) > div > a",
+      "value": "@href"
+    },
+    "pubDate": {
+      "css": "#base-container > div._1VWa_ > div._2u2xA > div:nth-child(1) > div > div:nth-child(n) > div > a > div.SOOWB > h1",
+      "value": "string(.)"
+    }
+  },
+  "template": {
+    "pubDate": "{{pubDate | date: \"%Y-%m-%d %H:%M\"}}",
+    "comicurl": "{{url}}"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "{{url}}",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "imgurl": {
+      "css": ".P > a:nth-child(1)",
+      "value": "@href"
+    },
+    "title": {
+      "css": ".captions > p:nth-child(1)",
+      "value": "string(.)"
+    }
+  },
+  "template": {
+    "url": "{{comicurl}}",
+    "pubDate": "{{pubDate}}"
+  }
+}
