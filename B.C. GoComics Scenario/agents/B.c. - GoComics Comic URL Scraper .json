@@ -1,0 +1,20 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "{{url}}",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "img": {
+      "css": ".item-comic-image > img:nth-child(1)",
+      "value": "@src"
+    },
+    "hovertext": {
+      "css": "h1.m-0",
+      "value": "string(.)"
+    }
+  },
+  "template": {
+    "url": "https://www.gocomics.com/bc/{{urlpath}}",
+    "pubDate": "{{hovertext | split: \"for \" | last | date: \"%Y-%m-%d %H:%M\"}}"
+  }
+}

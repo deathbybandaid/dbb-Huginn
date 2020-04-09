@@ -1,0 +1,26 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "https://www.gocomics.com/bc",
+  "type": "html",
+  "mode": "all",
+  "extract": {
+    "start_date": {
+      "css": "body > div.js-amu-container-global > div.gc-page-container > div.gc-container.gc-container--fluid > div > div.layout-2col-content.content-section-padded > div.row > div.gc-deck.gc-deck--cta-1 > a",
+      "value": "@href"
+    },
+    "end_date": {
+      "css": "body > div.js-amu-container-global > div.gc-page-container > div.gc-container.gc-container--fluid > div > div.layout-2col-content.content-section-padded > div.row > div.gc-deck.gc-deck--cta-0 > a",
+      "value": "@href"
+    }
+  },
+  "template": {
+    "start_date": "{{start_date | split: \"/bc/\" | last}}",
+    "end_date": "{{end_date | split: \"/bc/\" | last}}",
+    "start_year": "{{start_date | split: \"/bc/\" | last | date: \"%Y\"}}",
+    "end_year": "{{end_date | split: \"/bc/\" | last | date: \"%Y\"}}",
+    "start_month": "{{start_date | split: \"/bc/\" | last | date: \"%m\"}}",
+    "end_month": "{{end_date | split: \"/bc/\" | last | date: \"%m\"}}",
+    "start_day": "{{start_date | split: \"/bc/\" | last | date: \"%d\"}}",
+    "end_day": "{{end_date | split: \"/bc/\" | last | date: \"%d\"}}"
+  }
+}

@@ -1,0 +1,3 @@
+{
+  "action": "{% if backfill_complete == 0 %}enable{% else %}disable{% endif %}"
+}
