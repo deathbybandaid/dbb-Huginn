@@ -1,0 +1,383 @@
+{
+  "schema_version": 1,
+  "name": "!Text Message Templates",
+  "description": "No description provided",
+  "source_url": false,
+  "guid": "d59608a5e4347944439997e8fddccb2d",
+  "tag_fg_color": "#ffffff",
+  "tag_bg_color": "#000000",
+  "icon": "gear",
+  "exported_at": "2020-04-21T12:03:38Z",
+  "agents": [
+    {
+      "type": "Agents::EmailAgent",
+      "name": "T-Mobile SMS & MMS",
+      "disabled": false,
+      "guid": "03a2461bd8d9b166f92b9c7c1dbe93a4",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@tmomail.net"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "C-Spire",
+      "disabled": false,
+      "guid": "0d1263cc489e3a6263c8b2caf76488b1",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@cspire1.com"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Simple Mobile SMS",
+      "disabled": false,
+      "guid": "11d66839496a0a619773cad6d7e03464",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@smtext.com"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Tracfone MMS",
+      "disabled": false,
+      "guid": "1d2a2199e1a7d81f5bb3a78ecb3ce917",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@mmst5.tracfone.com"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Boost Mobile SMS",
+      "disabled": false,
+      "guid": "1ee25003d556fabd30ff3772036dbd30",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@sms.myboostmobile.com"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Verizon MMS",
+      "disabled": false,
+      "guid": "217b6c5cd0e79edc508be662fbc97475",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@vzwpix.com"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "U.S. Cellular SMS",
+      "disabled": false,
+      "guid": "29e21c7855d9d8b3cabf919247d1b885",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@email.uscc.net"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Republic Wireless SMS",
+      "disabled": false,
+      "guid": "2a978fe389c8cc6c7967b6b45fa1a642",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@text.republicwireless.com"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Verizon SMS",
+      "disabled": false,
+      "guid": "3f2447ce9e254caf57891b2fe5e3c47b",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@vtext.com"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Xfinity Mobile SMS",
+      "disabled": false,
+      "guid": "3f302ad51c722c82c8d40279730925af",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@vtext.com"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Cricket MMS",
+      "disabled": false,
+      "guid": "496c8c6220c5a1e196a3742e1b25cbd0",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@mms.cricketwireless.net"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Google Fi (Project Fi) SMS & MMS",
+      "disabled": false,
+      "guid": "497a0bf50fcc6c26d81703724265ed75",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@msg.fi.google.com"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Xfinity Mobile MMS",
+      "disabled": false,
+      "guid": "52ea0bbe831aefdb8098421b99f2e433",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@mypixmessages.com"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "U.S. Cellular MMS",
+      "disabled": false,
+      "guid": "693dbcedcabc5902d5a043f320b62a5b",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@mms.uscc.net"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "AT&T MMS",
+      "disabled": false,
+      "guid": "7898e10191a556000beea89700ec3a09",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@mms.att.net"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Page Plus",
+      "disabled": false,
+      "guid": "8ca091a1ae08140ba6eed9051d895adf",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@vtext.com"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Boost Mobile MMS",
+      "disabled": false,
+      "guid": "926cb12819ae0b188d8fa7d210a237fa",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@myboostmobile.com"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Metro PCS SMS & MMS",
+      "disabled": false,
+      "guid": "c2374ded32ed3c3913fe2e9210afd801",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@mymetropcs.com"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Cricket SMS",
+      "disabled": false,
+      "guid": "d66b858b89dd46dea0b96bc4e60c51f8",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@sms.cricketwireless.net"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Virgin Mobile MMS",
+      "disabled": false,
+      "guid": "dc5a4c3d561f8057a97e407bbd1098ab",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@vmpix.com"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Ting",
+      "disabled": false,
+      "guid": "ddc3dd2df233c738d49e586d9a0b1a88",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@message.ting.com"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "AT&T SMS",
+      "disabled": false,
+      "guid": "e41ce3de4099024c1eacc82cb09a60be",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@txt.att.net"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Sprint MMS",
+      "disabled": false,
+      "guid": "e45f15fffa0685deb79fec26013b7a15",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@pm.sprint.com"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Mint Mobile SMS",
+      "disabled": false,
+      "guid": "e8fd9dcb0564346c3b5fa8411a7a81ba",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@mailmymobile.net"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Sprint SMS",
+      "disabled": false,
+      "guid": "eaed383f61526b17909c9d7950b6b4d5",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@messaging.sprintpcs.com"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Virgin Mobile SMS",
+      "disabled": false,
+      "guid": "f280473b0af679d301bfa5f48c17170a",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@vmobl.com"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Red Pocket SMS",
+      "disabled": false,
+      "guid": "f5dc124c5929c5c3923f089ff96793d8",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@vtext.com"
+      },
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Consumer Cellular",
+      "disabled": false,
+      "guid": "fc71d5f0d51edf448e32c649ccd972f8",
+      "options": {
+        "subject": "You have a notification!",
+        "headline": "Your notification:",
+        "expected_receive_period_in_days": "2",
+        "recipients": "number@mailmymobile.net"
+      },
+      "propagate_immediately": false
+    }
+  ],
+  "links": [
+
+  ],
+  "control_links": [
+
+  ]
+}
